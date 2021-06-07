@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
+@Component
 @Primary
 @Order(1)
-@Component
 @Qualifier("class.random.name")
 public class RandomNumberServiceFirst implements RandomNumberService {
     Logger logger = LoggerFactory.getLogger(RandomNumberServiceFirst.class);

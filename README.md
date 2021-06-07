@@ -1,4 +1,4 @@
-# Spring Beans
+# Spring Beans - Homework
 
 ### @Aspect
 
@@ -18,5 +18,11 @@ methods:
 > [source](https://docs.spring.io/spring-framework/docs/4.3.15.RELEASE/spring-framework-reference/html/aop.html)
 ### @Order
 
+##### You can find code example in test/test folder about @Order.
 
-> 
+The @Order annotation defines the sorting order of an annotated component or bean.
+> Before Spring 4.0, the **@Order** annotation was used only for the AspectJ execution 
+> order. It means the highest order advice will run first.
+> Since Spring 4.0, it supports the ordering of injected components to a collection. 
+> As a result, Spring will inject the auto-wired beans of the same type based on 
+> their order value. [source](https://www.baeldung.com/spring-order)
